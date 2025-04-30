@@ -18,9 +18,9 @@ public class Academia {
         clientes.add(cliente);
     }
 
-    //public void removerCliente(int id) {
-    //   clientes.removeIf(cliente -> cliente.getId() == id);
-    //}
+    public void removerCliente(int id) {
+       clientes.removeIf(cliente -> cliente.getId() == id);
+    }
 
     public int NumeroDeClientes(){
         return clientes.size(); // pode usar length?
@@ -35,14 +35,14 @@ public class Academia {
         }
         return result;
     }
-    //public void RemoverClientesAntesDe1990() {
-    //    Iterator<Cliente> iterator = clientes.iterator();
-    //    while (iterator.hasNext()) {
-    //        if (iterator.next().getAnoNascimento() < 1990) {
-    //            iterator.remove();
-    //        }
-    //    }
-    //}
+    public void RemoverClientesAntesDe1990() {
+        Iterator<Cliente> iterator = clientes.iterator();
+        while (iterator.hasNext()) {
+            if (iterator.next().getAnoNascimento() < 1990) {
+                iterator.remove();
+            }
+        }
+    }
 
     public void listarClientes() {
         for (Cliente cliente : clientes) {
