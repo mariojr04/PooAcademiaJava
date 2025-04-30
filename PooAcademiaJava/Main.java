@@ -9,7 +9,7 @@ public class Main {
         a.CadastrarCliente(new Cliente(4, "Ana", 1988, "4444-4444"));
 
         
-        //a.RemoverCliente(1);
+        a.RemoverCliente(1);
 
         
         System.out.println("Número de clientes matriculados: " + a.NumeroDeClientes());
@@ -21,8 +21,8 @@ public class Main {
         }
 
         
-        //a.removerClientesAntesDe1990();
-        //System.out.println("Clientes após remoção dos nascidos antes de 1990:");
-        //a.listarClientes();
+        a.removerClientesAntesDe1990();
+        System.out.println("Clientes após remoção dos nascidos antes de 1990:");
+        a.listarClientes();
     }
 }
